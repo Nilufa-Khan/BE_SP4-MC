@@ -9,6 +9,7 @@ import org.springframework.context.ApplicationContext;
 public class BeSp4McApplication {
 
 	public static void main(String[] args) {
+
 		ApplicationContext context = SpringApplication.run(BeSp4McApplication.class, args);
 		MessageService messageService = context.getBean("messageService", MessageService.class);
 		String res = messageService.message();
